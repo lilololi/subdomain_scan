@@ -1,0 +1,3 @@
+# subdomain_scan
+This is a domain scanner.
+You can use it find the second-level domain or thrid-level domain ...
