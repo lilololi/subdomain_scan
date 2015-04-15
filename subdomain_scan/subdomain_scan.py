@@ -63,7 +63,7 @@ class subdomain:
         def print_progress(self):
                 self.lock.acquire()
                 msg = '%s found |%s remaining |%s scanned in %.2f seconds'%(self.findcount,self.queue.qsize(),self.scancount,time.time()-self.starttime)
-                sys.stdout.write('\r'+'                                 '+msg)
+                sys.stdout.write('\r'+'\b'*10+msg)
                 sys.stdout.flush()
                 self.lock.release()
                 
